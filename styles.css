@@ -1,0 +1,136 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* container section */
+.container{
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    background: linear-gradient(45deg, rgba(134, 20, 205, .4), rgba(255, 0, 87, .9)),
+        url("img/pexels-andrea-piacquadio-3960127.jpg") center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Important styling - psuedo elements */
+.container::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 250px;
+    background: #fff;
+    clip-path: polygon(100% 50%, 0 100%, 100% 100%);
+    margin-bottom: -1px;
+}
+
+.content{
+    position: relative;
+    width: 900px;
+    text-align: center;
+    color: #fff;
+    padding: 0 10px;
+}
+
+.content h1{
+    margin: 0;
+    padding: 0;
+    font-size: 5em;
+}
+
+.content p{
+    font-size: 1.5em;
+}
+
+
+/* button */
+.btn{
+    padding: 14px 28px;
+    font-size: 1.2em;
+    border-radius: 4px;
+    border: none;
+    margin-top: 10px;
+    transition: all .3s;
+}
+
+.btn:hover{
+    color: #fff;
+    background: #000;
+    transform: scale(1.10);
+}
+
+
+/* about me section*/
+.about{
+    width: 80%;
+    margin: 0 auto;
+    padding: 70px 0;
+}
+
+.about h1{
+    font-size: 3em;
+    margin-bottom: 0;
+}
+
+.about p{
+    width: 70%;
+    font-size: 1.2em;
+    line-height: 1.37;
+    color: rgb(62, 62, 62);
+}
+
+
+/* media query -  responsive */
+@media screen and (max-width: 576px){
+    .content h1{
+        font-size: 3rem;
+    }
+
+    .content p {
+        font-size: 1.12em;
+    }
+
+    .about {
+        padding: 10px 0;
+    }
+
+    .about p{
+        width: 100%;
+    }
+}
+
+/* tablets and phone screens of 600px and more */
+@media screen and (min-width:600px) and (max-width:847px){
+    .content h1 {
+            font-size: 4rem;
+        }
+    
+        .content p {
+            font-size: 1.1em;
+        }
+    
+        .about {
+            padding: 10px 0;
+        }
+    
+        .about p {
+            width: 100%;
+        }
+}
+
+
+
+
+
+
+
+
+
+
+
